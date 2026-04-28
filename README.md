@@ -1,13 +1,13 @@
 # SPL225 - Assignment 2  
 ## GurionRock Pro Max Ultra Over 9000: Perception and Mapping System  
 
-### 👨‍💻 Authors  
+###  Authors  
 - Maia Barber
 - Yuval Pariente  
 
 ---
 
-## 🧠 Overview  
+##  Overview  
 This project implements a multi-threaded, event-driven robotic perception and mapping system using Java. The system simulates the GurionRock Pro Max Ultra Over 9000 – an advanced robotic vacuum cleaner equipped with various sensors including a Camera, LiDAR, IMU, and GPS.  
 
 It integrates:
@@ -18,7 +18,7 @@ It integrates:
 
 ---
 
-## 🎯 Project Structure  
+##  Project Structure  
 
 ### 1. MicroServices Framework  
 Custom-built framework handling:
@@ -36,7 +36,7 @@ Custom-built framework handling:
 
 ---
 
-## 📦 Packages  
+##  Packages  
 
 - `bgu.spl.mics`: Core MicroService interfaces  
 - `bgu.spl.mics.application.services`: All MicroService classes  
@@ -45,7 +45,7 @@ Custom-built framework handling:
 
 ---
 
-## ⚙️ How It Works  
+##  How It Works  
 
 1. `TimeService` emits `TickBroadcast` every tick  
 2. `CameraService` detects objects and sends `DetectObjectsEvent`  
@@ -57,7 +57,7 @@ All components synchronize on ticks and terminate gracefully or on sensor error.
 
 ---
 
-## 🧪 Testing  
+##  Testing  
 We followed **Test-Driven Development (TDD)**. JUnit tests were written for:  
 - `MessageBusImpl`  
 - `FusionSlamService` logic  
@@ -67,7 +67,7 @@ Tests are under `src/test/java`.
 
 ---
 
-## 📄 Input  
+##  Input  
 System is initialized using a **Configuration JSON** (path passed as CLI argument).  
 Additional files:  
 - Camera Data  
@@ -76,7 +76,7 @@ Additional files:
 
 ---
 
-## 📝 Output  
+##  Output  
 A single file: `output_file.json`  
 Includes:
 - Final statistics (runtime, number of detections, landmarks, etc.)
@@ -85,7 +85,7 @@ Includes:
 
 ---
 
-## 🧰 Technologies Used  
+##  Technologies Used  
 - Java 8  
 - Maven (build tool)  
 - GSON (for JSON parsing)  
