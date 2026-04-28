@@ -93,7 +93,7 @@ Includes:
 
 ---
 
-## 🚀 Running the Project  
+##  Running the Project  
 
 ### Build  
 ```bash
